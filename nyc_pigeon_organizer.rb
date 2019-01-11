@@ -7,6 +7,7 @@ def nyc_pigeon_organizer(data)
           if organized[name].keys.include?(key)
             
           else
+            organized[name][key] = 
         else
           organized[name] = { key => type }
 end
