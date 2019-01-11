@@ -5,9 +5,14 @@ def nyc_pigeon_organizer(data)
       pigeon.each do |name|
         if organized.keys.include?(name)
           if organized[name].keys.include?(key)
-            
+            organized[name][key] << type.to_s
           else
-            organized[name][key] = 
+            organized[name][key] = [type.to_s]
+          end
         else
-          organized[name] = { key => [type] }
+          organized[name] = { key => [type.to_s] }
+        end
+      end
+    end
+  end
 end
