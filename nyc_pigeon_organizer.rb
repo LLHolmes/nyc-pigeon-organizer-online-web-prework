@@ -9,5 +9,5 @@ def nyc_pigeon_organizer(data)
           else
             organized[name][key] = 
         else
-          organized[name] = { key => type }
+          organized[name] = { key => [type] }
 end
